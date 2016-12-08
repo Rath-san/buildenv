@@ -1,0 +1,150 @@
+/* COMPONENTS.sass */
+
+/* 04.alerts */
+/* 05.buttons */
+// Restyled Primary Buttons
+.btn-primary
+    @include button-variant(white, $theme-primary, $theme-primary)
+    @include heading-font
+    font-weight: 700
+
+.btn-xl
+    @include button-variant(white, $theme-primary, $theme-primary)
+    @include heading-font
+    font-weight: 700
+    border-radius: 3px
+    font-size: 18px
+    padding: 20px 40px
+
+// Social Buttons
+ul.social-buttons
+    margin-bottom: 0
+    li
+        a
+            display: block
+            background-color: $gray-darker
+            height: 40px
+            width: 40px
+            border-radius: 100%
+            font-size: 20px
+            line-height: 40px
+            color: white
+            outline: none
+            -webkit-transition: all 0.3s
+            -moz-transition: all 0.3s
+            transition: all 0.3s
+            &:hover,
+            &:focus,
+            &:active
+                background-color: $theme-primary
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus
+    outline: none
+
+.portfolio-modal
+    .modal-dialog
+        margin: 0
+        height: 100%
+        width: auto
+    .modal-content
+        border-radius: 0
+        background-clip: border-box
+        -webkit-box-shadow: none
+        box-shadow: none
+        border: none
+        min-height: 100%
+        padding: 100px 0
+        text-align: center
+        h2
+            margin-bottom: 15px
+            font-size: 3em
+        p
+            margin-bottom: 30px
+        p.item-intro
+            margin: 20px 0 30px
+            @include serif-font
+            font-style: italic
+            font-size: 16px
+        ul.list-inline
+            margin-bottom: 30px
+            margin-top: 0
+        img
+            margin-bottom: 30px
+    .close-modal
+        position: absolute
+        width: 75px
+        height: 75px
+        background-color: transparent
+        top: 25px
+        right: 25px
+        cursor: pointer
+        &:hover
+            opacity: 0.3
+        .lr
+            height: 75px
+            width: 1px
+            margin-left: 35px
+            background-color: $gray-darker
+            transform: rotate(45deg)
+            -ms-transform: rotate(45deg)
+            /* IE 9 */
+            -webkit-transform: rotate(45deg)
+            /* Safari and Chrome */
+            z-index: 1051
+            .rl
+                height: 75px
+                width: 1px
+                background-color: $gray-darker
+                transform: rotate(90deg)
+                -ms-transform: rotate(90deg)
+                /* IE 9 */
+                -webkit-transform: rotate(90deg)
+                /* Safari and Chrome */
+                z-index: 1052
+    .modal-backdrop
+        opacity: 0
+        display: none
+/* 06.forms */
+// Contact Section
+section#contact
+    background-color: $gray-darker
+    background-image: url('../images/map-image.png')
+    background-position: center
+    background-repeat: no-repeat
+    .section-heading
+        color: white
+    .form-group
+        margin-bottom: 25px
+        input,
+        textarea
+            padding: 20px
+        input.form-control
+            height: auto
+        textarea.form-control
+            height: 236px
+    .form-control:focus
+        border-color: $theme-primary
+        box-shadow: none
+    ::-webkit-input-placeholder
+       @include heading-font
+       font-weight: 700
+       color: $gray-lighter
+    :-moz-placeholder  /* Firefox 18- */
+       @include heading-font
+       font-weight: 700
+       color: $gray-lighter
+    ::-moz-placeholder   /* Firefox 19+ */
+       @include heading-font
+       font-weight: 700
+       color: $gray-lighter
+    :-ms-input-placeholder
+       @include heading-font
+       font-weight: 700
+       color: $gray-lighter
+    .text-danger
+        color: $theme-danger
+/* 07.lists */
+/* 08.navs */
+/* 09.tables */
