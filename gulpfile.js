@@ -13,8 +13,11 @@ var concat = require('gulp-concat');
 gulp.task('browserSync', function() {
     browserSync.init({
         // notify: false,
-        server: "subcms/templates"
-    });
+        server: {
+          baseDir: ["./", "subcms/templates"]
+          }
+        }
+    );
 });
 
 // setTimeout(function(){

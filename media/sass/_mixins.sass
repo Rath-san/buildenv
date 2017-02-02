@@ -2,7 +2,7 @@
 
 // Bootstrap Button Variant
 
-@mixin button-variant($color, $background, $border)
+=button-variant($color, $background, $border)
   color: $color
   background-color: $background
   border-color: $border
@@ -12,7 +12,7 @@
     color: $color
     background-color: darken($background, 10%)
         border-color: darken($border, 25%)
-  
+
   &:hover
     color: $color
     background-color: darken($background, 10%)
@@ -57,27 +57,35 @@
 
 // Background Cover Mixin
 
-@mixin background-cover
+// =background-cover
   -webkit-background-size: cover
   -moz-background-size: cover
   background-size: cover
   -o-background-size: cover
 
+// Shadow box
+
+// =shadow-variant($type, $horizontal, $vertical, $blur-radius, $spread-radus, $color)
+//   box-shadow: $type $horizontal $vertical $blur-radius $spread-radus $color)
+
 
 // Font Mixins
 
-@mixin serif-font
+=ico-font
+  font-family: FontAwesome
+
+=serif-font
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif
 
 
-@mixin script-font
+=script-font
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive
 
 
-@mixin body-font
+=body-font
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif
 
 
-@mixin heading-font
+=heading-font
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
   text-transform: uppercase

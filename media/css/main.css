@@ -1,5 +1,5 @@
 /* MAIN.css */
-/* BASE.sass */
+/* BASE.css */
 /* 01.normalize */
 /* 02.layout */
 body {
@@ -20,8 +20,6 @@ header {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover;
-  -o-background-size: cover;
   text-align: center;
   color: white; }
   header .intro-text {
@@ -358,7 +356,7 @@ h1, h2, h3, h4, h5, h6 {
 .burgerToX div:nth-child(3) {
   transform: rotate(30deg); }
 
-/* COMPONENTS.sass */
+/* COMPONENTS.css */
 /* 04.alerts */
 /* 05.buttons */
 .btn-primary {
@@ -536,11 +534,7 @@ section#contact {
   background-color: #222222;
   background-image: url("../images/map-image.png");
   background-position: center;
-  background-repeat: no-repeat;
-  -moz-placeholder-font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -moz-placeholder-text-transform: uppercase;
-  -moz-placeholder-font-weight: 700;
-  -moz-placeholder-color: #eeeeee; }
+  background-repeat: no-repeat; }
   section#contact .section-heading {
     color: white; }
   section#contact .form-group {
@@ -555,28 +549,13 @@ section#contact {
   section#contact .form-control:focus {
     border-color: #fed136;
     box-shadow: none; }
-  section#contact ::-webkit-input-placeholder {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #eeeeee; }
-  section#contact ::-moz-placeholder {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #eeeeee; }
-  section#contact :-ms-input-placeholder {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #eeeeee; }
   section#contact .text-danger {
     color: #e74c3c; }
 
 /* 07.lists */
 /* 08.navs */
 /* 09.tables */
-/* MODULES.sass */
+/* MODULES.css */
 /* 10.aside */
 aside.clients img {
   margin: 50px auto; }
@@ -593,14 +572,14 @@ aside.clients img {
   .navbar-custom .navbar-collapse {
     border-color: rgba(255, 255, 255, 0.98); }
   .navbar-custom .navbar-toggle {
-    background-color: #222222;
-    border-color: #222222;
+    background-color: #fed136;
+    border-color: #fed136;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     color: white;
     font-size: 12px; }
     .navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
-      background-color: #222222; }
+      background-color: #fed136; }
   .navbar-custom .nav li a {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
@@ -653,3 +632,5 @@ footer {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-transform: none; }
+
+/* PRINT.css */

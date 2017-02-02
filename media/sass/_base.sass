@@ -4,7 +4,7 @@
 /* 02.layout */
 body
     overflow-x: hidden
-    @include body-font
+    +body-font
 
 .img-centered
     margin: 0 auto
@@ -20,20 +20,20 @@ header
     background-repeat: no-repeat
     background-attachment: scroll
     background-position: center center
-    @include background-cover
+    // +background-cover
     text-align: center
     color: white
     .intro-text
         padding-top: 100px
         padding-bottom: 50px
         .intro-lead-in
-            @include serif-font
+            +serif-font
             font-style: italic
             font-size: 22px
             line-height: 22px
             margin-bottom: 25px
         .intro-heading
-            @include heading-font
+            +heading-font
             font-weight: 700
             font-size: 50px
             line-height: 50px
@@ -45,13 +45,13 @@ header
             padding-top: 300px
             padding-bottom: 200px
             .intro-lead-in
-                @include serif-font
+                +serif-font
                 font-style: italic
                 font-size: 40px
                 line-height: 40px
                 margin-bottom: 25px
             .intro-heading
-                @include heading-font
+                +heading-font
                 font-weight: 700
                 font-size: 75px
                 line-height: 75px
@@ -66,7 +66,7 @@ section
         margin-bottom: 15px
     h3.section-subheading
         font-size: 16px
-        @include serif-font
+        +serif-font
         text-transform: none
         font-style: italic
         font-weight: 400
@@ -126,7 +126,7 @@ section
                 text-transform: none
                 margin: 0
             p
-                @include serif-font
+                +serif-font
                 font-style: italic
                 font-size: 16px
                 margin: 0
@@ -343,7 +343,7 @@ a.active
     color: darken($theme-primary, 10%)
 
 h1, h2, h3, h4, h5, h6
-    @include heading-font
+    +heading-font
     font-weight: 700
 
 /* 04.animations */
