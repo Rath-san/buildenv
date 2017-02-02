@@ -1,0 +1,12 @@
+.idea
+.svn
+.DS_Store
+*.pyc
+*.log
+db.sqlite3
+media/CACHE/*
+migrations/*
+*/migrations/*
+*/*/migrations/*
+media/images/*
+node_modules
