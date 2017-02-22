@@ -16,7 +16,7 @@ body
     background-color: $gray-darker
 
 header
-    background-image: url('../images/header-bg.jpg')
+    background-image: url('../img/header-bg.jpg')
     background-repeat: no-repeat
     background-attachment: scroll
     background-position: center center
@@ -347,34 +347,3 @@ h1, h2, h3, h4, h5, h6
     font-weight: 700
 
 /* 04.animations */
-// hamburger to x
-.burger
-  div
-    margin-top: 4px
-    margin-bottom: 4px
-    height: 2px
-    width: 25px
-    background-color: white
-    &:nth-child(1),
-    &:nth-child(2),
-    &:nth-child(3)
-      transition: transform 300ms ease-in-out
-      transform-origin: 100% 0%
-
-// [data-toggle="collapse"]
-//   &:nth-child(1)
-//     transform: rotate(-30deg)
-//   &:nth-child(2)
-//     transform: scale(0)
-//   &:nth-child(3)
-//     transform: rotate(30deg)
-
-.burgerToX
-  div
-    &:nth-child(1)
-      transform: rotate(-30deg)
-    &:nth-child(2)
-      transform: scale(0)
-    &:nth-child(3)
-      transform: rotate(30deg)
-    // transform:

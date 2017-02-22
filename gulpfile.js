@@ -6,9 +6,9 @@ var autoprefixer = require('gulp-autoprefixer');
 var njk = require('gulp-nunjucks-render');
 var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
-var uglify = require('gulp-uglify');
-var cleanCSS = require('gulp-clean-css');
-var concat = require('gulp-concat');
+// var uglify = require('gulp-uglify');
+// var cleanCSS = require('gulp-clean-css');
+// var concat = require('gulp-concat');
 var imagemin = require('gulp-imagemin');
 var exec = require('child_process').exec;
 var child = require('child_process');
@@ -64,10 +64,7 @@ gulp.task('front', ['browserSync', 'njk', 'sass'], function() {
     // Watch for changes in html, js
     gulp.watch("subcms/**/*.html").on('change', browserSync.reload);
     gulp.watch("media/js/*.js").on('change', browserSync.reload);
-});
-
-gulp.task('default', function() {
-    console.log('hello world!, soon to be dist compiler');
+    gulp.watch("media/img/").on('change', browserSync.reoad);
 });
 
 // BACKEND ===============================================
