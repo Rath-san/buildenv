@@ -64,7 +64,6 @@ gulp.task('front', ['browserSync', 'njk', 'sass'], function() {
     // Watch for changes in html, js
     gulp.watch("subcms/**/*.html").on('change', browserSync.reload);
     gulp.watch("media/js/*.js").on('change', browserSync.reload);
-    gulp.watch("media/img/").on('change', browserSync.reoad);
 });
 
 // BACKEND ===============================================
@@ -93,7 +92,7 @@ gulp.task('default', ['django','sass'], function() {
   console.log('hello world!, watch, sass, js');
   setTimeout(function(){
     browserSync.init({
-      notify: false,
+      notify: true,
       proxy: "127.0.0.1:8000",
       reloadDelay: 300,
       reloadDebounce: 500

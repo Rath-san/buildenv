@@ -47,7 +47,7 @@
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
+              <ul id="menu" class="nav navbar-nav navbar-right">
                   <li class="hidden">
                       <a href="#page-top"></a>
                   </li>
@@ -72,11 +72,14 @@
       </div>
       <!-- /.container-fluid -->
   </nav>
+<div id="fullpage">
+    <div class="section">
+
 
     {% block content %}{% endblock %}
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="slide fp-auto-height">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -103,7 +106,8 @@
             </div>
         </div>
     </footer>
-
+        </div>
+</div>
 </body>
 
   <!-- jQuery -->
@@ -117,8 +121,9 @@
   <script src="media/js/contact_me.js"></script>
 
   <!-- Theme JavaScript -->
-  {# <script src="js/agency.js"></script> #}
   <!-- ALL -->
+  {% block extra_js %}{% endblock %}
+
   <script src="media/js/main.js"></script>
   <!-- Plugin JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>

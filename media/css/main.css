@@ -533,6 +533,10 @@ section#contact {
   section#contact .text-danger {
     color: #e74c3c; }
 
+section#map {
+  height: 100px;
+  width: 100%; }
+
 /* 07.lists */
 /* 08.navs */
 /* 09.tables */
