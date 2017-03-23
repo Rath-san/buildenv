@@ -4,6 +4,7 @@ var reload = browserSync.reload;
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var njk = require('gulp-nunjucks-render');
+// var pug = require('gulp-pug');
 var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
 // var uglify = require('gulp-uglify');
@@ -13,11 +14,11 @@ var imagemin = require('gulp-imagemin');
 var exec = require('child_process').exec;
 var child = require('child_process');
 
-gulp.task('img', function() {
-    gulp.src('media/images/**/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('media/images'));
-});
+// gulp.task('img', function() {
+//     gulp.src('media/images/**/*')
+//         .pipe(imagemin())
+//         .pipe(gulp.dest('media/images'));
+// });
 
 // Static Server
 gulp.task('browserSync', function() {
@@ -30,6 +31,13 @@ gulp.task('browserSync', function() {
     );
 });
 
+// gulp.task('views', function buildHTML() {
+//   return gulp.src('views/*.pug')
+//   .pipe(pug({
+//     // Your options in here.
+//   }))
+// });
+
 // nunjucks html render
 gulp.task('njk', function() {
     return gulp.src('media/njk/pages/*.njk')
@@ -40,14 +48,30 @@ gulp.task('njk', function() {
         .pipe(gulp.dest('subcms/templates'));
 });
 
+
+var sassPaths = [
+  'bower_components/bootstrap-sass/assets/stylesheets'
+];
+
+
 // sass compiler
 gulp.task('sass', function() {
-    return gulp.src('media/sass/main.sass')
+    return gulp.src(['media/sass/*.sass','media/sass/*.scss'])
         .pipe(sass({
-            style: 'compressed'
+            includePaths: sassPaths,
+            outputStyle: 'compressed'
         }).on('error', sass.logError))
         .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
+            browsers: [
+                "Android 2.3",
+                "Android >= 4",
+                "Chrome >= 20",
+                "Firefox >= 24",
+                "Explorer >= 8",
+                "iOS >= 6",
+                "Opera >= 12",
+                "Safari >= 6"
+            ],
             cascade: false
         }))
         // .pipe(header(banner, { pkg: pkg }))
@@ -60,6 +84,8 @@ gulp.task('sass', function() {
 gulp.task('front', ['browserSync', 'njk', 'sass'], function() {
     // Watch for changes in sass, nunjucks
     gulp.watch("media/sass/*.sass", ['sass']);
+    gulp.watch("media/sass/*.scss", ['sass']);
+
     gulp.watch("media/njk/**/*.njk", ['njk']);
     // Watch for changes in html, js
     gulp.watch("subcms/**/*.html").on('change', browserSync.reload);
