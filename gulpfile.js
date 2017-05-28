@@ -4,12 +4,8 @@ var reload = browserSync.reload;
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var njk = require('gulp-nunjucks-render');
-// var pug = require('gulp-pug');
 var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
-// var uglify = require('gulp-uglify');
-// var cleanCSS = require('gulp-clean-css');
-// var concat = require('gulp-concat');
 var imagemin = require('gulp-imagemin');
 var exec = require('child_process').exec;
 var child = require('child_process');
@@ -59,7 +55,7 @@ gulp.task('sass', function() {
     return gulp.src(['media/sass/*.sass','media/sass/*.scss'])
         .pipe(sass({
             includePaths: sassPaths,
-            outputStyle: 'compressed'
+            // outputStyle: 'compressed'
         }).on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: [
@@ -82,53 +78,50 @@ gulp.task('sass', function() {
 });
 
 gulp.task('front', ['browserSync', 'njk', 'sass'], function() {
-    // Watch for changes in sass, nunjucks
-    gulp.watch("media/sass/*.sass", ['sass']);
-    gulp.watch("media/sass/*.scss", ['sass']);
-
+    gulp.watch("media/sass/**/*.{sass,scss}", ['sass']);
+    gulp.watch("media/js/*.js").on('change', reload);
     gulp.watch("media/njk/**/*.njk", ['njk']);
-    // Watch for changes in html, js
-    gulp.watch("subcms/**/*.html").on('change', browserSync.reload);
-    gulp.watch("media/js/*.js").on('change', browserSync.reload);
+    gulp.watch("subcms/**/*.html").on('change', reload);
+
 });
 
 // BACKEND ===============================================
-gulp.task('django', function(){
-
-  var spawn = child.spawn;
-  console.info('Starting django server');
-  var PIPE = {
-    stdio: 'inherit'
-  };
-  spawn('python', ['manage.py','runserver'], PIPE);
-});
-
-gulp.task('runserver', function() {
-    var isWin = /^win/.test(process.platform);
-     var cmd =  'source .../venv/bin/activate';
-     console.log(cmd);
-    if (isWin) { //for Windows
-        cmd = '..\\Scripts\\activate';
-    }
-
-    var proc = exec(cmd);
-});
-
-gulp.task('default', ['django','sass'], function() {
-  console.log('hello world!, watch, sass, js');
-  setTimeout(function(){
-    browserSync.init({
-      notify: true,
-      proxy: "127.0.0.1:8000",
-      reloadDelay: 300,
-      reloadDebounce: 500
-    });
-  }, 2000);
-  // Watch for changes in sass, nunjucks
-  gulp.watch("media/sass/*.sass", ['sass']);
-  // gulp.watch("nunjucks/**/*.njk", ['nunjucks']);
-  // Watch for changes in html, js
-  gulp.watch("templates/**/*.html").on('change', reload);
-  gulp.watch("media/js/*.js").on('change', reload);
-  // gulp.watch(["../subcms/**/*.html"], reload);
-});
+// gulp.task('django', function(){
+//
+//   var spawn = child.spawn;
+//   console.info('Starting django server');
+//   var PIPE = {
+//     stdio: 'inherit'
+//   };
+//   spawn('python', ['manage.py','runserver'], PIPE);
+// });
+//
+// gulp.task('runserver', function() {
+//     var isWin = /^win/.test(process.platform);
+//      var cmd =  'source .../venv/bin/activate';
+//      console.log(cmd);
+//     if (isWin) { //for Windows
+//         cmd = '..\\Scripts\\activate';
+//     }
+//
+//     var proc = exec(cmd);
+// });
+//
+// gulp.task('default', ['django','sass'], function() {
+//   console.log('hello world!, watch, sass, js');
+//   setTimeout(function(){
+//     browserSync.init({
+//       notify: true,
+//       proxy: "127.0.0.1:8000",
+//       reloadDelay: 300,
+//       reloadDebounce: 500
+//     });
+//   }, 2000);
+//   // Watch for changes in sass, nunjucks
+//   gulp.watch("media/sass/**/*.+(sass,scss)", ['sass']);
+//   // gulp.watch("nunjucks/**/*.njk", ['nunjucks']);
+//   // Watch for changes in html, js
+//   gulp.watch("templates/**/*.html").on('change', reload);
+//   gulp.watch("media/js/*.js").on('change', reload);
+//   // gulp.watch(["../subcms/**/*.html"], reload);
+// });
