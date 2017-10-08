@@ -1,6 +1,6 @@
 {
   "name": "buildenv",
-  "description": "Building enviroment with nunjucks",
+  "description": "Building enviroment with pug",
   "main": "gulpfile.js",
   "authors": [
     "Rafał Kozłowski"
@@ -26,5 +26,11 @@
     "font-awesome": "fontawesome#^4.7.0",
     "bootstrap-sass": "^3.3.7",
     "owl.carousel": "^2.2.1"
+  },
+  "dependencies": {
+    "fullpage.js": "^2.9.4",
+    "video.js": "^6.2.1",
+    "font-awesome": "^4.7.0",
+    "material-design-lite": "^1.3.0"
   }
 }

@@ -1,0 +1,112 @@
+header.header
+  .container-fluid
+    .row
+      .header-top
+        a.header-brand(href='/')
+          img(src="./media/img/logo/makrum-logo.svg", height="30" alt="Makrum")
+        button.btn.btn-default.ad-modal(data-toggle="modal", data-target="#addModal") launch add modal
+        button.sidemenu-toggle.btn.fa.fa-navicon.sidemenu-toggle(type='button')
+        .header-utils-bar.pull-right
+          ul.list-inline.header-contact
+            li
+              .media
+                .media-left.media-middle
+                  i.fa.fa-map-marker
+                .media-right.media-middle
+                  | ul. Fordońska 40#[br]85-719 Bydgoszcz
+            li
+              .media
+                .media-left.media-middle
+                  i.fa.fa-mobile-phone
+                .media-right.media-middle
+                  | (+48) 200 00 00#[br]makrum@makrum.pl
+          ul.list-inline.header-lang-flags
+            li
+              a(href="")
+                img(src="./media/img/flags/pl.jpg", alt="")
+            li
+              a(href="http://")
+                img(src="./media/img/flags/en.jpg", alt="")
+            li
+              a(href="http://")
+                img(src="./media/img/flags/de.jpg", alt="")
+
+      
+      
+      //- ul.social.list-inline.pull-right
+        li
+          a.btn.btn-primary.btn-sm(href="#")
+            i.fa.fa-google-plus
+        li
+          a.btn.btn-primary.btn-sm(href="#")
+            i.fa.fa-facebook
+        li
+          a.btn.btn-primary.btn-sm(href="#")
+            i.fa.fa-youtube
+
+  nav.navbar.navbar-makrum
+    .container
+      // Brand and toggle get grouped for better mobile display
+      .navbar-header
+        //- button.navbar-toggle.collapsed
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        //- a.navbar-brand.hidden-sm.hidden-md.hidden-lg(href='#') Makrum
+      // Collect the nav links, forms, and other content for toggling
+      #navbarMakrumLinks
+        ul.nav.navbar-nav
+          li
+            //- button#menu-speed.mdl-button.mdl-js-button.mdl-button--icon
+              i.material-icons more_vert
+            //- ul.mdl-menu.mdl-js-menu(for='menu-speed')
+              li.mdl-menu__item Fast
+              li.mdl-menu__item Medium
+              li.mdl-menu__item Slow
+
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+              | ofeta
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='offer-index.html') maszyny kruszącomielące
+              li
+                a(href='offer-index.html') sektor offshore & marine
+              li
+                a(href='offer-index.html') produkty przemysłowe
+              li
+                a(href='offer-index.html') usługi
+          li
+            a(href="product-search.html")
+              | produkty
+          li.active
+            a(href="/blog-index.html")
+              | aktualności
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                  | nasze standardy
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href='standards.html') certyfikaty
+                  li
+                    a(href='standards.html') polityka jakości
+                  li
+                    a(href='standards.html') polityka bezieczeństwa i środowiska
+          li
+            a(href="about.html")
+              | o nas
+          li
+            a(href="contact.html")
+              | kontakt
+
+        form.navbar-form.navbar-right
+          .form-group
+            input#navbarSearch.form-control(type='text', placeholder='Search')
+            //- label.mdl-textfield__label(for="navbarSearch") ...
+          button.btn.btn-search(type='submit')
+            i.fa.fa-search
+      // /.navbar-collapse
+    // /.container-fluid

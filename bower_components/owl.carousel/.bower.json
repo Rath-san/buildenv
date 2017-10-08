@@ -19,6 +19,5 @@
   },
   "_source": "https://github.com/OwlFonk/OwlCarousel2.git",
   "_target": "^2.2.1",
-  "_originalSource": "owl.carousel",
-  "_direct": true
+  "_originalSource": "owl.carousel"
 }

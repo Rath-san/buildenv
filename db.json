@@ -1,0 +1,224 @@
+{
+  "title": "Makrum",
+  "logo": "http://via.placeholder.com/150x100?text=LOGO",
+
+  "sections": {
+    "offer": {
+      "subtitle": "offer subtitle",
+      "title": "offer title 12"
+    },
+    "about": {
+      "subtitle": "about subtitle",
+      "title": "about title"
+    },
+    "history": {
+      "subtitle": "history subtitle",
+      "title": "history title"
+    },
+    "career": {
+      "subtitle": "career subtitle",
+      "title": "career title"
+    },
+    "contact": {
+      "subtitle": "contact subtitle",
+      "title": "contact title"
+    },
+    "news": {
+      "subtitle": "news subtitle",
+      "title": "news title"
+    }
+  },
+
+
+  "articles": [
+    {
+      "id": 1,
+      "name": "lolz"
+    },
+    {
+      "id": 2,
+      "name": "tr"
+    },
+    {
+      "id": 3,
+      "name": "lolz"
+    }
+  ],
+
+  "offerCards": {
+    "card1": {
+      "title": "offer card title",
+      "description": "Card description dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "card2": {
+      "title": "offer card title",
+      "description": "Card description dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "card3": {
+      "title": "offer card title",
+      "description": "Card description dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "card4": {
+      "title": "offer card title",
+      "description": "Card description dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "card5": {
+      "title": "offer card title",
+      "description": "Card description dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "card6": {
+      "title": "offer card title",
+      "description": "Card description dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  },
+
+  "news": {
+    "one": {
+      "pic": {
+        "small": "http://via.placeholder.com/240x160",
+        "normal": "http://via.placeholder.com/240x160",
+        "large": "http://via.placeholder.com/1920x1080"
+      },
+      "date": "02.02.2018",
+      "author": {
+        "name": "Adam Adamski",
+        "pic": "http://via.placeholder.com/64/64"
+      },
+      "title": "news title 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "two": {
+      "pic": {
+        "small": "http://via.placeholder.com/240x160",
+        "normal": "http://via.placeholder.com/240x160",
+        "large": "http://via.placeholder.com/240x160"
+      },
+      "date": "02.02.2018",
+      "author": {
+        "name": "Adam Adamski",
+        "pic": "http://via.placeholder.com/64/64"
+      },
+      "title": "news title 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "three": {
+      "pic": {
+        "small": "http://via.placeholder.com/240x160",
+        "normal": "http://via.placeholder.com/240x160",
+        "large": "http://via.placeholder.com/240x160"
+      },
+      "date": "02.02.2018",
+      "author": {
+        "name": "Adam Adamski",
+        "pic": "http://via.placeholder.com/64/64"
+      },
+      "title": "news title 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "four": {
+      "pic": {
+        "small": "http://via.placeholder.com/240x160",
+        "normal": "http://via.placeholder.com/240x160",
+        "large": "http://via.placeholder.com/240x160"
+      },
+      "date": "02.02.2018",
+      "author": {
+        "name": "Adam Adamski",
+        "pic": "http://via.placeholder.com/64/64"
+      },
+      "title": "news title 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  },
+
+  "ph": {
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "card": "http://via.placeholder.com/370x200",
+    "icon": {
+      "small": "http://via.placeholder.com/32x32?text=icon32",
+      "normal": "http://via.placeholder.com/64x64?text=icon64",
+      "large": "http://via.placeholder.com/128x128?text=icon128"
+    },
+    "about": {
+      "pic": "http://via.placeholder.com/1920x580"
+    },
+    "jumbo": {
+      "one": "http://via.placeholder.com/1920x580",
+      "two": "http://via.placeholder.com/1920x580",
+      "three": "http://via.placeholder.com/1920x580"
+    }
+  },
+
+  "addPopup": {
+    "title": "add title",
+    "description": "Lorem ipsum dolor sit amet"
+  },
+
+  "about": {
+    "header": {
+      "title": "O makrum",
+      "img": "http://via.placeholder.com/1920x580"
+    },
+    "text": {
+      "img": "http://via.placeholder.com/770x450",
+      "header": "lorem ipsum dolor sit amet",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "cite": "cytat"
+    },
+    "timeline": {
+      "heading": "wydarzenie",
+      "description": "Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.",
+      "date": "luty 1990"
+    },
+    "career": {
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "job": {
+        "title": "ślusarz/monter",
+        "requirements": [
+          "doświadczenie w pracy przy prefabrykacji konstrukcji stalowych",
+          "znajomość rysunku technicznego",
+          "wykształcenie techniczne: co najmniej zawodowe",
+          "odpowiedzialność i samodyscyplina; precyzja i dokładność w wykonywaniu powierzonych zadań",
+          "dobra organizacja czasu i miejsca pracy",
+          "samodzielność i zdolność do podejmowania decyzji"
+        ],
+        "offer": [
+          "atrakcyjne warunki wynagrodzenia",
+          "szkolenia",
+          "stabilną wysoko wyspecjalizowaną pracę",
+          "możliwość samorealizacji"
+        ],
+        "url": "apply"
+      }
+
+    },
+    "promo": {
+      "header": "promo header",
+      "img": "http://via.placeholder.com/1920x300",
+      "url": "page.url"
+    }
+  },
+
+  "contact": {
+    "map": "http://via.placeholder.com/1920x300?text=map",
+    "name": "MAKRUM Project Management Sp. z o.o.",
+    "address": "ul. Fordońska 40 85-719 Bydgoszcz",
+    "phone": {
+      "text": "+48 52 561 23 30",
+      "url": "+48525612330"
+    },
+    "fax": "+48 52 321 00 78",
+    "mail": "info@makrum.pl",
+    "nip": "5542919914",
+    "regon": "341374200",
+    "management": {
+      "name": "Piotr Piotrowski",
+      "position": "prezes zarządu",
+      "mail": "p.piotrowki@makrum.pl",
+      "contact": {
+        "text": "+48 52 561 23 30",
+        "url": "+48525612330"
+      }
+    }
+  }
+}

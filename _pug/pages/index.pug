@@ -1,0 +1,56 @@
+extends ../templates/base
+block extra_css
+
+block content
+  hr
+  section
+    .container
+      .row
+        .col-sm-6
+          .json-input-test
+  section.index-offer
+    .container
+      .row
+        .col-sm-12
+          .section-title
+            p #{sections.offer.subtitle}
+            h2 #{sections.offer.title}
+        for val in offerCards
+          .col-sm-4
+            .card-offer.margin-bottom-3
+              .card-img-holder
+                a(href="offer-index.html")
+                  img(src=ph.card, width="370",height="200" class="img-responsive")
+              .media.card-text-holder
+                .media-left.media-top.card-icon-holder
+                  img(src=ph.icon.normal, width="64",height="64")
+                .media-body.card-text
+                  a(href="offer-index.html")
+                    h4.media-heading #{val.title}
+                  p #{val.description}
+  section.index-about
+    .container-fluid
+      .row
+        
+  hr
+
+  section.index-news
+    .container
+      .row
+        .col-sm-12
+          .section-title
+            p #{sections.news.subtitle}
+            h2 #{sections.news.title}
+        for n in news
+          .col-sm-3
+            .card-offer
+              .card-img-holder
+                img(src=n.pic.normal width="260" height="140", class="img-responsive")
+              .card-body
+                ul.list-inline
+                  li
+                    i.date date
+                a(href="/blog-page.html"): h3 #{n.title}
+                p #{n.description}
+  hr
+block extra_js

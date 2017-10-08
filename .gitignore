@@ -10,3 +10,5 @@ migrations/*
 */*/migrations/*
 media/images/*
 node_modules
+bower_components
+package-lock.json

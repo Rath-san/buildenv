@@ -1,0 +1,19 @@
+// animations
+
+=keyframes($name)
+  @keyframes #{$name}
+    @content
+
+// media
+
+=media-min($val)
+  @media screen and (min-width: #{$val})
+    @content
+
+=media-max($val)
+  @media screen and (max-width: #{$val})
+    @content
+
+=media-min-max($minval,$maxval)
+  @media screen and (min-width: #{$minval}) and (max-width: #{$maxval})
+    @content

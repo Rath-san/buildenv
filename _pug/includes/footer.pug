@@ -1,0 +1,54 @@
+footer
+  .container
+    .row
+      .col-md-3
+        h3 Makrum
+        p.footer-description
+          | footer description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        hr
+        ul.social.list-inline
+          li
+            a.btn.btn-primary.btn-sm(href="#") g+
+          li
+            a.btn.btn-primary.btn-sm(href="#") fb
+          li
+            a.btn.btn-primary.btn-sm(href="#") yt
+      .col-md-3
+        h3 szybki dostęp
+        nav
+          ul.list-unstyled
+            li: a(href="http://", target="_blank") O firmie
+            li: a(href="http://", target="_blank") Maszyny krusząco-mielące
+            li: a(href="http://", target="_blank") Sektor offshore & Marine
+            li: a(href="http://", target="_blank") Produkty przemysłowe
+            li: a(href="http://", target="_blank") Usługi
+      .col-md-3
+        p
+      .col-md-3
+        h3 kontakt
+        ul.list-unstyled
+          li.margin-bottom-1
+            .media
+              .media-left
+                img(src=ph.icon.small width="32", height="32")
+              .media-body
+                p #{contact.address}
+          li.margin-bottom-1
+            .media
+              .media-left
+                img(src=ph.icon.small width="32", height="32")
+              .media-body
+                p: a(href=contact.phone.url) #{contact.phone.text}
+                
+          li.margin-bottom-1
+            .media
+              .media-left
+                img(src=ph.icon.small width="32", height="32")
+              .media-body
+                p #{contact.fax}
+                
+hr
+aside.clearfix
+  p.pull-left &copy; Makrum 2017
+  p.pull-right design & execution 
+    a(href="//subeli.com") Subeli
