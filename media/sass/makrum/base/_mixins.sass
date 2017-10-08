@@ -1,11 +1,9 @@
 // animations
-
 =keyframes($name)
   @keyframes #{$name}
     @content
 
 // media
-
 =media-min($val)
   @media screen and (min-width: #{$val})
     @content
@@ -17,3 +15,18 @@
 =media-min-max($minval,$maxval)
   @media screen and (min-width: #{$minval}) and (max-width: #{$maxval})
     @content
+
+
+// centering
+@mixin center($position)
+  position: absolute
+  @if $position == 'vertical'
+    top: 50%
+    transform: translateY(-50%)
+  @else if $position == 'horizontal'
+    left: 50%
+    transform: translate(-50%)
+  @else if $position == 'both'
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
