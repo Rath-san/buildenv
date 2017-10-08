@@ -91,12 +91,6 @@ gulp.task('sass', function() {
         }));
 });
 
-
-var log = function(){
-  console.log("1");
-}
-
-
 // watch
 gulp.task('front', ['pug', 'sass'], function() {
     browserSync.init({
