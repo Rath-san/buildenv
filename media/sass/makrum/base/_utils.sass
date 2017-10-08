@@ -1,4 +1,6 @@
-.color
+
+//background color
+.c
   &-white
     color: $white
   &-primary
@@ -12,6 +14,22 @@
   &-text
     color: $brand-text
 
+//background color
+.bgc
+  &-white
+    background-color: $white
+  &-primary
+    background-color: $brand-primary
+    &-lighter
+      background-color: $brand-primary-lighter
+    &-darker
+      background-color: $brand-primary-darker
+  &-cta
+    background-color: $brand-cta
+  &-text
+    background-color: $brand-text
+
+//margin
 $margin: 10
 $margin-size: 0px
 
@@ -28,6 +46,7 @@ $margin-size: 0px
     margin-right: $margin-size + $margin * 10
   $margin: $margin - 1
 
+// padding
 $padding: 10
 $padding-size: 0px
 
@@ -44,6 +63,7 @@ $padding-size: 0px
     padding-right: $padding-size + $padding * 10
   $padding: $padding - 1
 
+// font-weight
 @for $i from 1 through 9
   .f-w#{$i*100}
     font-weight: $i * 100
